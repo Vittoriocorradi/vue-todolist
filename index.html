@@ -8,6 +8,11 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- /Font Awesome -->
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- /Font -->
 
     <title>TodoList VueJS</title>
     <!-- Style -->
@@ -39,8 +44,8 @@
                 Non ci sono elementi nella lista
             </div>
             <ul v-else>
-                <li v-for="(todo, index) in todoList" class="list-item">
-                    <div :class="{barred: todo.done}" @click="isDone(index)">
+                <li v-for="(todo, index) in todoList" class="list-item" :class="{doneItem: todo.done}">
+                    <div :class="{barred: todo.done}" class="li-text" @click="isDone(index)">
                         {{ todo.text }}
                     </div>
                     <div>

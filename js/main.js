@@ -3,11 +3,11 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            newTodo: {
+            newTodo: {       //Nuovo todo
                 text: '',
                 done: false
             },
-            todoList: [  //Lista oggetti todo
+            todoList: [      //Lista oggetti todo
                 {
                     text: 'Comprare il pane',
                     done: false
@@ -28,10 +28,10 @@ createApp({
         }
     },
     methods: {
-        deleteTodo(index) {
+        deleteTodo(index) {          //Cancella un todo
             this.todoList.splice(index, 1);
         },
-        addTodo() {
+        addTodo() {                  //Aggiungi un todo
             if (this.newTodo.text.trim() !== '') {
                 this.todoList.push(this.newTodo);
                 this.newTodo = {
@@ -40,7 +40,7 @@ createApp({
                 };
             }
         },
-        isDone(index) {
+        isDone(index) {      //Modifica il valore booleano di done
             if (this.todoList[index].done === true) {
                 this.todoList[index].done = false;
             } else {
