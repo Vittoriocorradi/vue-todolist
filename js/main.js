@@ -39,7 +39,6 @@ createApp({
                     done: false
                 };
             }
-            console.log(this.todoList);
         }
     }
 }).mount('#app');

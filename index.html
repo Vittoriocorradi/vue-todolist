@@ -30,7 +30,7 @@
 
             <!-- Input -->
             <div class="input-area">
-                <input type="text" v-model="newTodo.text" placeholder="Aggiungi un Todo!" id="input-todo">
+                <input type="text" v-model="newTodo.text" @keyup.enter="addTodo" placeholder="Aggiungi un Todo!" id="input-todo">
                 <button @click="addTodo">Aggiungi</button>
             </div>
             
