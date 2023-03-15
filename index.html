@@ -41,7 +41,7 @@
             
             <!-- TodoList -->
             <div class="ms-null" v-if="todoList.length === 0">
-                Non ci sono elementi nella lista
+                Non ci sono elementi nella lista, aggiungine di nuovi!
             </div>
             <ul v-else>
                 <li v-for="(todo, index) in todoList" class="list-item" :class="{doneItem: todo.done}">

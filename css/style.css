@@ -91,6 +91,12 @@ main .input-area button {
 
 /* Lista todo */
 
+main .ms-null {
+    font-size: 1.5em;
+    margin-top: 5rem;
+    text-align: center;
+}
+
 main ul {
     list-style-type: none;
     background-color: #fff;
