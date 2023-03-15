@@ -3,7 +3,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            todoList: [
+            todoList: [  //Lista oggetti todo
                 {
                     text: 'Comprare il pane',
                     done: false

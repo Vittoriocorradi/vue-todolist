@@ -22,8 +22,9 @@
 
         <!-- Main -->
         <main>
+            <!-- TodoList -->
             <ul>
-                <li>list item</li>
+                <li v-for="todo in todoList" :class="{barred: todo.done}">{{ todo.text }}</li>
             </ul>
         </main>
         <!-- /Main -->

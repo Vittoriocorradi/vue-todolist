@@ -45,3 +45,13 @@ MAIN
 main {
     padding-top: 2.1875rem;
 }
+
+/*
+--------
+CLASSI PER JS
+--------
+*/
+
+.barred {
+    text-decoration: line-through;
+}
