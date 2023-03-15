@@ -9,3 +9,39 @@ RESET
     padding: 0;
     box-sizing: border-box;
 }
+
+/*
+--------
+COMMON
+--------
+*/
+
+body {
+    padding-top: 3.125rem;
+}
+
+header,
+main {
+    max-width: 62rem;
+    margin: 0 auto;
+}
+
+/*
+--------
+HEADER
+--------
+*/
+
+header h1 {
+    text-align: center;
+}
+
+/*
+--------
+MAIN
+--------
+*/
+
+main {
+    padding-top: 2.1875rem;
+}
