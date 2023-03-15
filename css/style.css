@@ -46,6 +46,26 @@ main {
     padding-top: 2.1875rem;
 }
 
+/* Area input */
+
+main .input-area {
+    display: flex;
+    margin-bottom: 1.25rem;
+    border: .0625rem solid #000;
+}
+
+main .input-area > * {
+    display: block;
+    padding: .625rem;
+    border: none;
+}
+
+main .input-area #input-todo {
+    flex-grow: 1;
+}
+
+/* Lista todo */
+
 main ul {
     list-style-type: none;
 }
