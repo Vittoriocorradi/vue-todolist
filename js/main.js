@@ -39,6 +39,13 @@ createApp({
                     done: false
                 };
             }
+        },
+        isDone(index) {
+            if (this.todoList[index].done === true) {
+                this.todoList[index].done = false;
+            } else {
+                this.todoList[index].done = true;
+            }
         }
     }
 }).mount('#app');

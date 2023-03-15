@@ -40,7 +40,7 @@
             </div>
             <ul v-else>
                 <li v-for="(todo, index) in todoList" class="list-item">
-                    <div :class="{barred: todo.done}">
+                    <div :class="{barred: todo.done}" @click="isDone(index)">
                         {{ todo.text }}
                     </div>
                     <div>
