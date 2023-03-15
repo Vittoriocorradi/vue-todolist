@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- /Font Awesome -->
+
     <title>TodoList VueJS</title>
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
@@ -23,9 +28,20 @@
         <!-- Main -->
         <main>
             <!-- TodoList -->
-            <ul>
-                <li v-for="todo in todoList" :class="{barred: todo.done}">{{ todo.text }}</li>
+            <div class="ms-null" v-if="todoList.length === 0">
+                Non ci sono elementi nella lista
+            </div>
+            <ul v-else>
+                <li v-for="(todo, index) in todoList" class="list-item">
+                    <div :class="{barred: todo.done}">
+                        {{ todo.text }}
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-x" @click="deleteTodo(index)"></i>
+                    </div>
+                </li>
             </ul>
+            
         </main>
         <!-- /Main -->
 
